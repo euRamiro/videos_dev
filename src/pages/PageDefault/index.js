@@ -1,10 +1,9 @@
-  import React from 'react';
-  import styled from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 
-  import Menu from '../../components/Menu';
-  import Footer from '../../components/Footer';
+import Menu from '../../components/Menu';
+import Footer from '../../components/Footer';
 
- 
 const Main = styled.main`
 background-color: var(--black);
 color: var(--white);
@@ -14,16 +13,16 @@ padding-left: 5%;
 padding-right: 5%;
 `;
 
-  function PageDefault({children}) {
-    return (
-      <>
-        <Menu />      
-          <Main>
-          {children}
-          </Main>
-        <Footer/>
-      </>
-    );
-  }
+function PageDefault({ children }) {
+  return (
+    <>
+      <Menu />
+      <Main>
+        {children}
+      </Main>
+      <Footer />
+    </>
+  );
+}
 
-  export default PageDefault;
+export default PageDefault;
